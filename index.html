@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>The Clean Crust - Branding Proposal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .proposal-heading {
+        background: linear-gradient(90deg, #1e40af 0%, #3b82f6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .scroll-arrow {
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .timeline-dot::before {
+        content: "";
+        position: absolute;
+        left: -9px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #fbbf24;
+        z-index: 1;
+      }
+
+      .timeline-line::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: #e5e7eb;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white">
+    <!-- Header Section -->
+    <header
+      class="h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden bg-blue-50"
+    >
+      <div
+        class="absolute top-0 right-0 w-64 h-64 bg-yellow-300 rounded-full opacity-20 transform translate-x-1/2 -translate-y-1/2"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-96 h-96 bg-blue-300 rounded-full opacity-20 transform -translate-x-1/2 translate-y-1/2"
+      ></div>
+
+      <div class="z-10 max-w-4xl">
+        <p class="text-blue-600 font-medium mb-4">HIGH ON CONTENT PRESENTS</p>
+        <h1 class="proposal-heading text-6xl font-bold mb-6">
+          The Clean Crust
+        </h1>
+        <p class="text-xl text-gray-700 mb-8">
+          Research, Strategy, Branding & Packaging
+        </p>
+        <div class="bg-white p-6 rounded-lg shadow-lg inline-block">
+          <p class="text-gray-700">Prepared exclusively for</p>
+          <p class="text-2xl font-semibold text-blue-800">Ravi Godara</p>
+          <p class="text-gray-500 mt-2">May 23, 2025</p>
+        </div>
+      </div>
+
+      <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+        <div class="scroll-arrow text-blue-500">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">
+              Our Vision for Your Brand
+            </h2>
+            <p class="text-gray-700 mb-6">
+              We are excited to present this proposal for The Clean Crust,
+              outlining the creative and strategic deliverables curated by High
+              On Content (HOC). This collaboration aims to establish a distinct
+              and cohesive brand identity, designed to resonate with your target
+              audience and create a lasting market impact.
+            </p>
+            <p class="text-gray-700">
+              Our approach combines deep research, strategic thinking, and
+              creative excellence to build a brand that doesn't just look
+              good—it performs in the market and connects with your customers at
+              an emotional level.
+            </p>
+          </div>
+          <div class="flex-1 flex justify-center">
+            <div
+              class="w-64 h-64 rounded-full bg-yellow-400 flex items-center justify-center shadow-xl"
+            >
+              <div
+                class="w-56 h-56 rounded-full bg-blue-600 flex items-center justify-center"
+              >
+                <div
+                  class="w-48 h-48 rounded-full bg-white flex items-center justify-center"
+                >
+                  <p class="text-xl font-bold text-blue-800 text-center">
+                    Building<br />Remarkable<br />Brands
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 px-6 bg-blue-50">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-blue-800 mb-4">
+            Our Comprehensive Approach
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            We've designed a four-stage process to develop a brand that's
+            strategically sound, visually distinctive, and commercially
+            effective.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg p-8 transition-all duration-300 flex flex-col justify-between h-full"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-blue-800 mb-3">Research</h3>
+            <p class="text-gray-700 mb-4">
+              Comprehensive market, competitor, and consumer analysis to uncover
+              insights that inform strategy.
+            </p>
+            <div class="flex justify-between text-sm">
+              <span class="font-medium text-gray-500">Timeline:</span>
+              <span class="text-blue-600 font-medium">20 Days</span>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg p-8 transition-all duration-300 flex flex-col justify-between h-full"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-blue-800 mb-3">
+              Brand Strategy
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Developing your brand's positioning, story, voice, and messaging
+              to connect with your audience.
+            </p>
+            <div class="flex justify-between text-sm">
+              <span class="font-medium text-gray-500">Timeline:</span>
+              <span class="text-blue-600 font-medium">10 Days</span>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg p-8 transition-all duration-300 flex flex-col justify-between h-full"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-blue-800 mb-3">
+              Visual Identity
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Creating a distinctive logo, color palette, typography, and design
+              elements for your brand.
+            </p>
+            <div class="flex justify-between text-sm">
+              <span class="font-medium text-gray-500">Timeline:</span>
+              <span class="text-blue-600 font-medium">15 Days</span>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div
+            class="service-card bg-white rounded-lg shadow-lg p-8 transition-all duration-300 flex flex-col justify-between h-full"
+          >
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-blue-800 mb-3">
+              Packaging Design
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Developing packaging that stands out on shelf and communicates
+              your brand's value proposition.
+            </p>
+            <div class="flex justify-between text-sm">
+              <span class="font-medium text-gray-500">Timeline:</span>
+              <span class="text-blue-600 font-medium">15 Days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="py-20 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-blue-800 mb-4">
+            Project Scope & Deliverables
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            Here's a detailed breakdown of what's included in each phase of our
+            collaboration.
+          </p>
+        </div>
+
+        <div class="space-y-12 relative">
+          <div
+            class="absolute left-24 top-0 h-full w-px bg-gray-200 timeline-line"
+          ></div>
+
+          <!-- Research Section -->
+          <div class="flex">
+            <div class="w-24 relative">
+              <div
+                class="absolute right-0 top-10 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center timeline-dot"
+              >
+                <span class="text-white font-bold">A</span>
+              </div>
+            </div>
+            <div class="flex-1 ml-12 bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-2xl font-bold text-blue-800 mb-6">Research</h3>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Market Research & Analysis
+                  </h4>
+                  <p class="text-gray-700">
+                    Assessment of current market landscape, consumer
+                    preferences, pricing trends, packaging formats, and sales
+                    channels to identify key opportunities.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Competitor Research & Analysis
+                  </h4>
+                  <p class="text-gray-700">
+                    Deep-dive analysis of direct and indirect competitors'
+                    offerings, visual identity, messaging, pricing, and
+                    marketing tactics.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Primary Research and Surveys
+                  </h4>
+                  <p class="text-gray-700">
+                    Surveys and interviews with target audience to collect
+                    real-world insights on preferences, behaviors, and pain
+                    points.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">Branding Research</h4>
+                  <p class="text-gray-700">
+                    Study of successful brands to extract learnings around tone,
+                    storytelling, design systems, and customer engagement
+                    strategies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brand Strategy Section -->
+          <div class="flex">
+            <div class="w-24 relative">
+              <div
+                class="absolute right-0 top-10 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center timeline-dot"
+              >
+                <span class="text-white font-bold">B</span>
+              </div>
+            </div>
+            <div class="flex-1 ml-12 bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-2xl font-bold text-blue-800 mb-6">
+                Brand Strategy
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Brand Positioning & Statement
+                  </h4>
+                  <p class="text-gray-700">
+                    Defining a compelling brand position and articulating a
+                    clear positioning statement as the brand's strategic north
+                    star.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Brand Tagline Creation
+                  </h4>
+                  <p class="text-gray-700">
+                    Development of a memorable tagline to succinctly communicate
+                    the brand's promise or philosophy.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Messaging Framework
+                  </h4>
+                  <p class="text-gray-700">
+                    Crafting a framework that structures communication across
+                    channels, including core messaging and communication
+                    pillars.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Key Brand Proposition Development
+                  </h4>
+                  <p class="text-gray-700">
+                    Identifying and articulating primary value propositions that
+                    make the brand meaningful to the audience.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Brand Story Creation
+                  </h4>
+                  <p class="text-gray-700">
+                    Developing a compelling narrative that reflects the brand's
+                    journey, purpose, and values.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Voice, Tone, and Messaging Guidelines
+                  </h4>
+                  <p class="text-gray-700">
+                    Defining the brand's communication style to ensure a uniform
+                    personality across platforms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Brand Visual Identity Section -->
+          <div class="flex">
+            <div class="w-24 relative">
+              <div
+                class="absolute right-0 top-10 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center timeline-dot"
+              >
+                <span class="text-white font-bold">C</span>
+              </div>
+            </div>
+            <div class="flex-1 ml-12 bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-2xl font-bold text-blue-800 mb-6">
+                Brand Visual Identity
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-semibold text-blue-600">Logo Design</h4>
+                  <p class="text-gray-700">
+                    Creation of multiple logo concepts based on strategy and
+                    research, with final delivery in various formats.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">Brand Book</h4>
+                  <p class="text-gray-700">
+                    Comprehensive document outlining both strategic and visual
+                    brand elements as a foundational guide.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Brand Colors & Typography
+                  </h4>
+                  <p class="text-gray-700">
+                    Establishing a distinctive color palette and font system
+                    with technical specifications for consistency.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Brand Voice & Messaging
+                  </h4>
+                  <p class="text-gray-700">
+                    Detailed tone-of-voice guidelines with examples to maintain
+                    communication consistency.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Photography & Visual Style Guide
+                  </h4>
+                  <p class="text-gray-700">
+                    Guidance on visual aesthetics to ensure cohesive brand
+                    imagery across all assets.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">Design Elements</h4>
+                  <p class="text-gray-700">
+                    Custom design assets such as icons, illustrations, patterns,
+                    or mascots to enrich the visual identity.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Marketing Collateral Templates
+                  </h4>
+                  <p class="text-gray-700">
+                    Templates for common brand materials for quick, on-brand
+                    execution.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Merchandise Design Direction
+                  </h4>
+                  <p class="text-gray-700">
+                    Merchandise ideas and sample mockups to extend brand
+                    presence into physical touchpoints.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Packaging Design Section -->
+          <div class="flex">
+            <div class="w-24 relative">
+              <div
+                class="absolute right-0 top-10 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center timeline-dot"
+              >
+                <span class="text-white font-bold">D</span>
+              </div>
+            </div>
+            <div class="flex-1 ml-12 bg-white p-8 rounded-lg shadow-md">
+              <h3 class="text-2xl font-bold text-blue-800 mb-6">
+                Packaging Design
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Master Packaging Design
+                  </h4>
+                  <p class="text-gray-700">
+                    Development of a primary packaging system that reflects
+                    brand values and ensures strong shelf appeal.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">
+                    Per Variant Packaging Design
+                  </h4>
+                  <p class="text-gray-700">
+                    Tailored design adaptations for each product variant that
+                    emphasize flavor or feature differentiation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="py-20 px-6 bg-blue-600">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-white mb-4">Your Investment</h2>
+          <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+            A strategic investment in building a brand that stands out and
+            delivers lasting value.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+          <div class="p-8">
+            <table class="w-full">
+              <thead>
+                <tr class="border-b border-gray-200">
+                  <th class="text-left py-4 text-blue-800">Service</th>
+                  <th class="text-right py-4 text-blue-800">Investment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-200">
+                  <td class="py-4">
+                    <span class="font-medium text-gray-800">Research</span>
+                    <p class="text-sm text-gray-600">
+                      Market, Competitor, Primary Research & Branding Research
+                    </p>
+                  </td>
+                  <td class="py-4 text-right font-medium text-gray-800">
+                    INR 45,000
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-4">
+                    <span class="font-medium text-gray-800"
+                      >Brand Strategy</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Positioning, Tagline, Messaging Framework & Brand Story
+                    </p>
+                  </td>
+                  <td class="py-4 text-right font-medium text-gray-800">
+                    INR 40,000
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-4">
+                    <span class="font-medium text-gray-800">Logo Design</span>
+                  </td>
+                  <td class="py-4 text-right font-medium text-gray-800">
+                    INR 45,000
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-200">
+                  <td class="py-4">
+                    <span class="font-medium text-gray-800">Brand Book</span>
+                    <p class="text-sm text-gray-600">
+                      Colors, Typography, Voice, Style Guide & Templates
+                    </p>
+                  </td>
+                  <td class="py-4 text-right font-medium text-gray-800">
+                    INR 10,000
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-4">
+                    <span class="font-medium text-gray-800"
+                    >Packaging Design</span>
+                    <div class="text-sm text-gray-600">Master Design (1 SKU)</div>
+                    <div class="text-sm text-gray-600">Additional SKUs (₹9,000 x 5)</div>
+                  </td>
+                  <td class="py-4 text-right">
+                    <div class="font-medium text-gray-800">₹30,000</div>
+                    <div class="text-sm text-gray-600"><span class="line-through">₹45,000</span> (Complimentary)</div>
+                  </td>
+                </tr>
+                <!-- <tr>
+                  <td class="py-4">
+                    <span class="font-medium text-gray-800"
+                      >Packaging Design</span
+                    >
+                    <p class="text-sm text-gray-600">
+                      Master Design (1 SKU) + Additional SKUs
+                    </p>
+                  </td>
+                  <td class="py-4 text-right">
+                    <span class="font-medium text-gray-800">INR 30,000</span>
+                    <p class="text-sm text-gray-600">+ INR 9,000/SKU</p>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bg-blue-50 p-8">
+            <div class="flex justify-between items-center">
+              <span class="text-xl font-semibold text-blue-800"
+                >Total Investment</span
+              >
+              <div class="text-right">
+                <span class="text-xl font-bold text-blue-800"
+                  >INR 1,70,000 +
+                  <span class="">(9,000 ×  SKUs)</span></span
+                >
+                <p class="text-sm text-gray-600">Plus applicable GST</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center mt-10">
+              <span class="text-xl font-semibold text-blue-800"
+                >Discounted  Price</span
+              >
+              <div class="text-right">
+                <span class="text-xl font-bold text-blue-800"
+                  >INR 1,25,000 </span>
+                <p class="text-sm text-gray-600">Plus applicable GST</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 bg-yellow-400 rounded-lg p-6 shadow-lg">
+          <h3 class="text-xl font-bold text-blue-800 mb-4">Payment Terms</h3>
+          <ul class="space-y-2 text-blue-800">
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 mr-2 mt-1 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>50% upfront payment to secure your timeline</span>
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 mr-2 mt-1 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span
+                >30% upon completion of Research, Strategy & Visual
+                Identity</span
+              >
+            </li>
+            <li class="flex items-start">
+              <svg
+                class="w-5 h-5 mr-2 mt-1 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>20% upon final delivery</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section - Corrected -->
+    <section class="py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-blue-800 mb-4">
+            Project Timeline
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            We've designed an efficient timeline to deliver your brand with
+            precision and care.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+          <div class="p-8 space-y-6">
+            <!-- Research Phase -->
+            <div class="flex flex-col md:flex-row">
+              <div class="md:w-1/3 mb-4 md:mb-0">
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4"
+                  >
+                    <span class="font-bold text-blue-600">1</span>
+                  </div>
+                  <span class="font-semibold text-blue-800">Month 1</span>
+                </div>
+              </div>
+              <div class="md:w-2/3">
+                <h4 class="font-bold text-gray-800 mb-2">Research Phase</h4>
+                <p class="text-gray-600">
+                  Complete market, competitor, and consumer research including
+                  surveys and branding research.
+                </p>
+              </div>
+            </div>
+
+            <!-- Brand Strategy Phase -->
+            <div
+              class="border-t border-gray-200 pt-6 flex flex-col md:flex-row"
+            >
+              <div class="md:w-1/3 mb-4 md:mb-0">
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4"
+                  >
+                    <span class="font-bold text-blue-600">2</span>
+                  </div>
+                  <span class="font-semibold text-blue-800"
+                    >Month 2 (First 20 Days)</span
+                  >
+                </div>
+              </div>
+              <div class="md:w-2/3">
+                <h4 class="font-bold text-gray-800 mb-2">
+                  Brand Strategy Development
+                </h4>
+                <p class="text-gray-600">
+                  Creation of brand positioning, messaging framework, tagline,
+                  and brand story.
+                </p>
+              </div>
+            </div>
+
+            <!-- Visual Identity Phase -->
+            <div
+              class="border-t border-gray-200 pt-6 flex flex-col md:flex-row"
+            >
+              <div class="md:w-1/3 mb-4 md:mb-0">
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4"
+                  >
+                    <span class="font-bold text-blue-600">3</span>
+                  </div>
+                  <span class="font-semibold text-blue-800"
+                    >Month 2 (Remaining 10 Days) - Month 3</span
+                  >
+                </div>
+              </div>
+              <div class="md:w-2/3">
+                <h4 class="font-bold text-gray-800 mb-2">
+                  Visual Identity Creation
+                </h4>
+                <p class="text-gray-600">
+                  Development of logo, brand book, color palette, typography,
+                  and all visual identity elements.
+                </p>
+              </div>
+            </div>
+
+            <!-- Packaging Design Phase -->
+            <div
+              class="border-t border-gray-200 pt-6 flex flex-col md:flex-row"
+            >
+              <div class="md:w-1/3 mb-4 md:mb-0">
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4"
+                  >
+                    <span class="font-bold text-blue-600">4</span>
+                  </div>
+                  <span class="font-semibold text-blue-800"
+                    >Month 3 (Final 10+ Days)</span
+                  >
+                </div>
+              </div>
+              <div class="md:w-2/3">
+                <h4 class="font-bold text-gray-800 mb-2">Packaging Design</h4>
+                <p class="text-gray-600">
+                  Creation of master packaging design and variant-specific
+                  designs based on SKU count.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+
+    <!-- Terms and Conditions -->
+    <section class="py-20 px-6 bg-blue-50">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-blue-800 mb-4">
+            Terms & Conditions
+          </h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            To ensure a smooth and successful collaboration.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-xl p-8">
+          <div class="space-y-6">
+            <div class="flex">
+              <div class="mr-4 text-yellow-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-gray-700">
+                A non-refundable upfront payment of 50% of the total project fee
+                is required before work begins. This secures your project
+                timeline and covers research, strategy, and visual identity
+                phases.
+              </p>
+            </div>
+
+            <div class="flex">
+              <div class="mr-4 text-yellow-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-gray-700">
+                Once paid, the initial 50% deposit is non-refundable, regardless
+                of any changes or cancellation.
+              </p>
+            </div>
+
+            <div class="flex">
+              <div class="mr-4 text-yellow-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-gray-700">
+                30% of the project cost shall be paid upon completion of
+                Research, Brand Strategy, and Visual Identity.
+              </p>
+            </div>
+
+            <div class="flex">
+              <div class="mr-4 text-yellow-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-gray-700">
+                Any additional work, deliverables, or revisions outside the
+                defined scope of work will be billed separately at a rate agreed
+                upon prior to execution.
+              </p>
+            </div>
+
+            <div class="flex">
+              <div class="mr-4 text-yellow-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-gray-700">
+                The remaining 20% of the payment is due upon successful delivery
+                and completion of the project, and must be cleared within 2 days
+                of the final invoice being raised.
+              </p>
+            </div>
+
+            <div class="flex">
+              <div class="mr-4 text-yellow-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-gray-700">
+                Clients are expected to provide all necessary inputs: feedback,
+                content, and approvals in a timely manner to ensure smooth
+                project flow.
+              </p>
+            </div>
+
+            <div class="flex">
+              <div class="mr-4 text-yellow-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-gray-700">
+                We offer up to 4 rounds of revisions as part of the engagement.
+                Any additional revisions beyond this may incur extra charges,
+                discussed in advance.
+              </p>
+            </div>
+
+            <div class="flex">
+              <div class="mr-4 text-yellow-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-gray-700">
+                Our team is committed to delivering high-quality, strategic
+                outputs. If the final deliverables do not meet expectations, we
+                will offer reasonable revisions to align with the agreed brief.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-6 border-t border-gray-200">
+            <p class="text-blue-800 font-medium">
+              This proposal is valid for 2 months from the date of issue (until
+              July 8, 2025).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="py-20 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Process</h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            How we'll work together to create a brand that truly stands out.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Step 1 -->
+          <div
+            class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-yellow-400"
+          >
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center"
+              >
+                <span class="text-2xl font-bold text-blue-600">1</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-blue-800 text-center mb-4">
+              Discover
+            </h3>
+            <p class="text-gray-700 text-center">
+              We begin with deep research and analysis to understand your
+              market, competitors, and customers.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-blue-600"
+          >
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center"
+              >
+                <span class="text-2xl font-bold text-yellow-600">2</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-blue-800 text-center mb-4">
+              Define
+            </h3>
+            <p class="text-gray-700 text-center">
+              We craft a strategic foundation with clear positioning, messaging,
+              and brand narrative.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-yellow-400"
+          >
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center"
+              >
+                <span class="text-2xl font-bold text-blue-600">3</span>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-blue-800 text-center mb-4">
+              Design
+            </h3>
+            <p class="text-gray-700 text-center">
+              We bring your brand to life with distinctive visual elements and
+              packaging that stands out.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 px-6 bg-blue-600">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-white mb-4">
+            Why Choose High On Content
+          </h2>
+          <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+            Our approach to creating brands that resonate and deliver business
+            results.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Reason 1 -->
+          <div class="bg-white rounded-lg p-8 shadow-lg flex">
+            <div class="mr-4">
+              <div
+                class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-blue-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-blue-800 mb-2">
+                Strategy-First Approach
+              </h3>
+              <p class="text-gray-700">
+                We believe great brands are built on solid strategic
+                foundations, not just visual appeal. Our process ensures your
+                brand is meaningful and resonant.
+              </p>
+            </div>
+          </div>
+
+          <!-- Reason 2 -->
+          <div class="bg-white rounded-lg p-8 shadow-lg flex">
+            <div class="mr-4">
+              <div
+                class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-blue-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-blue-800 mb-2">
+                Market-Driven Insights
+              </h3>
+              <p class="text-gray-700">
+                We conduct thorough research to understand your market dynamics,
+                customer needs, and competitive landscape to identify
+                opportunities.
+              </p>
+            </div>
+          </div>
+
+          <!-- Reason 3 -->
+          <div class="bg-white rounded-lg p-8 shadow-lg flex">
+            <div class="mr-4">
+              <div
+                class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-blue-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-blue-800 mb-2">
+                Holistic Brand System
+              </h3>
+              <p class="text-gray-700">
+                We create comprehensive brand systems that work seamlessly
+                across all touchpoints, from packaging to digital presence.
+              </p>
+            </div>
+          </div>
+
+          <!-- Reason 4 -->
+          <div class="bg-white rounded-lg p-8 shadow-lg flex">
+            <div class="mr-4">
+              <div
+                class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-blue-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-blue-800 mb-2">
+                Collaborative Approach
+              </h3>
+              <p class="text-gray-700">
+                We work closely with you throughout the process, ensuring your
+                vision and insights are integral to the brand we build together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6">
+      <div
+        class="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl shadow-2xl overflow-hidden"
+      >
+        <div class="md:flex">
+          <div class="md:w-2/3 p-12">
+            <h2 class="text-3xl font-bold text-white mb-6">
+              Ready to Build a Remarkable Brand?
+            </h2>
+            <p class="text-blue-100 mb-8">
+              Let's collaborate to create a brand that stands out, connects with
+              your audience, and drives business growth.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <button
+                id="proposal"
+                class="inline-block bg-yellow-400 text-blue-800 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-300 transition duration-300"
+              >
+                Accept Proposal
+              </button>
+            </div>
+          </div>
+          <div
+            class="md:w-1/3 bg-blue-700 flex items-center justify-center p-12"
+          >
+            <div class="text-center">
+              <div
+                class="w-24 h-24 mx-auto bg-white rounded-full flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-12 h-12 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="text-white text-lg font-medium">Proposal Valid Until</p>
+              <p class="text-yellow-300 font-bold text-xl">July 24, 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-12 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-xl font-bold mb-2">High On Content</h3>
+            <p class="text-blue-200">
+              Creating brands that resonate and perform
+            </p>
+          </div>
+          <div class="flex flex-col items-center md:items-end">
+            <p class="mb-2">contact@highoncontent.com</p>
+            <p>+91 9876543210</p>
+          </div>
+        </div>
+        <div
+          class="border-t border-blue-700 mt-8 pt-8 text-center text-blue-200 text-sm"
+        >
+          <p>© 2025 High On Content. All rights reserved.</p>
+          <p class="mt-2">
+            This proposal is confidential and intended only for Ravi Godara and
+            The Clean Crust.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
