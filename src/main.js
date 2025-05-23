@@ -1,6 +1,10 @@
 const button = document.getElementById("proposal");
 
 button.addEventListener("click", () => {
+  // Disable immediately to prevent double-clicks
+  button.disabled = true;
+  button.innerHTML = "Sending...";
+
   sendNotification();
 });
 
@@ -17,14 +21,15 @@ function sendNotification() {
   })
     .then((res) => {
       if (!res.ok) throw new Error("Failed to send");
-      return res.text()
+      return res.text();
     })
     .then((data) => {
-      button.innerHTML = "Thanks for accepting the propsal"
-      button.disabled = true
-      console.log(data)
+      button.innerHTML = "Thanks for accepting the proposal";
     })
     .catch((err) => {
-      button.innerHTML = "Something went wrong contact: contact@highoncontent.com"
+      // Re-enable the button so user can try again
+      button.disabled = false;
+      button.innerHTML =
+        "Something went wrong. Contact: contact@highoncontent.com";
     });
 }
